@@ -52,11 +52,6 @@ function updateGrid() {
     createGrid(range.value);
 }  
 
-/* function alter(range, bubble) {
-    setBubble(range, bubble);
-    updateGrid(range.value);
-} */
-
-
 createGrid(16);
-range.addEventListener("input", () => updateGrid(range.value));
+range.addEventListener("input", () => updateGrid());
+resetButton.addEventListener("click", () => updateGrid());
